@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Premier League Football</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="assets/eplLogo.png">
+  <script src="https://kit.fontawesome.com/e34605d7a6.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link greyColor" href="#">Club Sites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="assets/arsenal.png" class="zoom" width="29" height="35"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/astonvilla.png" class="zoom" width="27" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/brighton.png" class="zoom" width="33" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/burnley.png" class="zoom" width="33" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/chelsea.png" class="zoom" width="33" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/crystal.png" class="zoom" width="30" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/everton.png" class="zoom" width="30" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/fulham.png" class="zoom" width="27" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/leeds.png" class="zoom" width="29" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/leicester.png" class="zoom" width="32" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/liverpool.png" class="zoom" width="29" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/mancity.png" class="zoom" width="32" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/ManchesterUnited.png" class="zoom" width="37" height="40" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/newcastle.png" class="zoom" width="32" height="37" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/sheffield.png" class="zoom" width="32" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/southampton.png" class="zoom" width="30" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/spurs.png" class="zoom" width="30" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/westbrom.png" class="zoom" width="30" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/westham.png" class="zoom" width="30" height="35" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#"><img src="assets/wolverhampton.png" class="zoom" width="34" height="35" alt=""></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbarPL" id="navbar1">
+    <a class="navbar-brand" href="index.html">
+      <img class="logo" src="assets/eplLogo.png" width="110" height="110" alt="Lion">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto nav-ul">
+        <li class="nav-item dropdown d-flex flex-row">
+          <a class="nav-link dropdown-toggle whiteColor1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">Premier League</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Home</a>
+            <a class="dropdown-item whiteColor" href="reisy.html"><i class="fa fa-arrow-right rightmargin"></i>Fixtures</a>
+            <a class="dropdown-item whiteColor" href="reisy.html"><i class="fa fa-arrow-right rightmargin"></i>Results</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Tables</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle whiteColor1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">Fantasy</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Fantasy</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Fantasy draft</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Broadcast</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Tickets</a>
+          </div>
+        </li>
+        <li class="navbar-item dropdown">
+          <a class="nav-link whiteColor1" href="#" id="navbarDropdownMenuLink">Video</a>
+        </li>
+        <li class="navbar-item dropdown">
+          <a class="nav-link dropdown-toggle whiteColor1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Communities</a>
+          <div class="dropdown-menu whiteColor" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Latest</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Strategy</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Programmes</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Facilities</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>PL Charitable Fund</a>
+          </div>
+        </li>
+        <li class="navbar-item dropdown navbar-right">
+          <a class="nav-link dropdown-toggle whiteColor1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+          <div class="dropdown-menu whiteColor" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Stats</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>ePremier League</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>King of the Match</a>
+          </div>
+        </li>
+        <li class="navbar-item dropdown navbar-right">
+          <a class="nav-link dropdown-toggle whiteColor1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">No Room For Racism</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item whiteColor" href="obzor.html"><i class="fa fa-arrow-right rightmargin"></i>We Are One Team</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Stay Well</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Season Review</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>PL Live</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Nike Ball Hub</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light tocenter">
+    <a class="navbar-brand" href="#" style="opacity: 0;">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link leftmargin" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#">Fixtures</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#" id="result">Results</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Disabled leftmargin" href="#">Tables</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#">Transfers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#">Broadcast</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" onclick="revealMessage()" href="#">Ticket</a>
+                <div id="hiddenMessage" style="display: none">
+                  <p class="">Tickets to matches: </p>
+              <button id="countDownButton" onclick="tickets()" class="leftmargin1">10</button>
+              <button onclick="closeMessage()">buy</button>
+            </div></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#">Clubs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#">Players</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#">Managers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin" href="#">Social</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle leftmarginbg" href="#" id="navbarDropdownMenuLink5" role="button" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i><span class="leftmarginsm">More</span></a>
+          <div class="dropdown-menu bigmarginleft" aria-labelledby="navbarDropdownMenuLink5" style="background-color: #37003c">
+            <a class="dropdown-item whiteColor" href="obzor.html"><i class="fa fa-arrow-right rightmargin"></i>Transfers</a>
+            <a class="dropdown-item whiteColor" href="#"><i class="fa fa-arrow-right rightmargin"></i>Partners</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="showcase">
+    <img class="showcase" src="assets/backgroundPL.png" alt="BackImg">
+    <div class="row Lingard">
+      <div class="col-sm-5">
+        <div class="card lng" style="width: 450px; height: 450px;">
+          <img class=" zoom1" src="assets/Lingardd.jpg" alt=" cap">
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="card cardColor" style="width: 450px; height: 450px;">
+          <p class="card-text"><span class="noracism leftmargin"><em>News</em></span></br>
+          <h5 class="card-title sizefont">Start date of 2021/22 season announced</h5>
+          <p class="card-text fontsmall" style="color: Gainsboro">Premier League Shareholders agree that the next campaign will begin on 14 August and end on 22 May.</p>
+          <p class="card-text fontsmall" style="font-weight: bold;">Related Content</p>
+          <p class="card-text fontsmall"><i class="colorpink fas fa-newspaper rightmargin"></i><a href="#" class="whiteColor">Fixture amendments for Matchweeks 30-31 in April<a></p>
+          <p class="card-text fontsmall"><i class="colorpink fas fa-newspaper rightmargin"></i><a href="#" class="whiteColor">Masters: The past year has been an incredible journey</a></p>
+          <p class="card-text fontsmall"><i class="colorpink fas fa-play rightmargin"></i><a href="#" class="whiteColor">Best Premier League goals scored in August</a></p>
+        </div>
+      </div>
+    <div class="col-sm-8">
+      <h3 class="cardColor playSoundP" style="width: 350px;"><i class="colorpink fas fa-play rightmargin" id="playSound"></i><span id="stopSound">Premier League Theme</span></h3>
+    </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link leftmargin1 zoom1" href="#"><img src="assets/easports.png" width="100" height="100" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin1 zoom1" href="#"><img src="assets/barclays.png" width="250" height="100" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin1 zoom1" href="#"><img src="assets/budweiser.png" width="200" height="100" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin1 zoom1" href="#"><img src="assets/coca-cola.png" width="200" height="90" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin1 zoom1" href="#"><img src="assets/hublot.png" width="200" height="90" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link leftmargin1 zoom1" href="#"><img src="assets/nike.png" width="200" height="100" alt=""></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="mainWidget">
+    <header>
+      <h3 class="colorpurp leftmargin">#WeAreOneTeam</h3>
+    </header>
+    <div class="row leftmargin">
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top zoom1" src="assets/McTominay.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><span class="noracism"><em>No Room For Racism</em></span></br>
+              <span class="title">McTominay: Social media abuse infuriates me</span>
+              <a href="#" class="articlesFont">
+                <p>
+                  <i class="colorpink fas fa-newspaper"></i><span class="leftmarginsm greyColor">Premier League to support UN's <br> anti-racism day</span>
+                </p>
+              </a>
+
+              <a href="#" class="articlesFont">
+                <p>
+                  <i class="colorpink fas fa-newspaper"></i><span class="leftmarginsm greyColor">Premier League announces No Room For Racism Action Plan</span>
+                </p>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top zoom1" src="assets/Mantonio.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><span class="noracism"><em>No Room For Racism</em></span></br>
+              <span class="title">Antonio: Diversity makes the world a better place</span>
+              <a href="#" class="articlesFont">
+                <p>
+                  <i class="colorpink fas fa-newspaper"></i><span class="leftmarginsm greyColor">Premier League to support UN's <br> anti-racism day</span>
+                </p>
+              </a>
+
+              <a href="#" class="articlesFont">
+                <p>
+                  <i class="colorpink fas fa-newspaper"></i><span class="leftmarginsm greyColor">Premier League announces No Room For Racism Action Plan</span>
+                </p>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top zoom1" src="assets/Maupay.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><span class="noracism"><em>No Room For Racism</em></span></br>
+              <span class="title">Maupay: Online abusers must learn of consequences</span>
+              <a href="#" class="articlesFont">
+                <p>
+                  <i class="colorpink fas fa-newspaper"></i><span class="leftmarginsm greyColor">Premier League to support UN's <br> anti-racism day</span>
+                </p>
+              </a>
+
+              <a href="#" class="articlesFont">
+                <p>
+                  <i class="colorpink fas fa-newspaper"></i><span class="leftmarginsm greyColor">Premier League announces No Room For Racism Action Plan</span>
+                </p>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mainWidget">
+    <div class="">
+      <img src="assets/nikenike.png" width="1200" height="250" alt="">
+    </div>
+  </section>
+  <section class="mainWidget">
+    <header>
+      <h3 class="colorpurp leftmargin">Latest News</h3>
+    </header>
+    <div class="row leftmargin">
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top zoom1" src="assets/otasowie.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><span class="noracism"><em>Feature</em></span></br>
+              <span class="title">Otasowie: Nuno has helped me develop as a person</span>
+              <a href="#" class="articlesFont">
+                <p>
+                  <img src="assets/wolverhampton.png" width="22" height="20" alt=""><span class="leftmarginsm greyColor">Owen Otasowie | From the cages of Peckham to the Premier League <br> anti-racism day</span>
+                </p>
+              </a>
+
+              <a href="#" class="articlesFont">
+                <p>
+                  <i class="colorpink fas fa-newspaper"></i><span class="leftmarginsm greyColor">2020/21 Premier League Debut Balls </span>
+                </p>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top zoom1" src="assets/fantasypl.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><span class="noracism"><em>Fantasy Premier League</em></span></br>
+              <span class="title">Official FPL Podcast: Is De Bruyne a must-have?</span>
+              <a href="#" class="articlesFont">
+                <p>
+                  <img src="assets/mancity.png" width="20" height="21" alt=""><span class="leftmarginsm greyColor">International break: Who is heading where and when do they play? </span>
+                </p>
+              </a>
+
+              <a href="#" class="articlesFont">
+                <p>
+                  <i class="colorpink fas fa-newspaper"></i><span class="leftmarginsm greyColor">Premier League announces No Room For Racism Action Plan</span>
+                </p>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top zoom1" src="assets/plmatches.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><span class="noracism"><em>ePremier League</em></span></br>
+              <span class="title">2020/21 ePL: Hashtag Tom battles through to Finals Day</span>
+              <a href="#" class="articlesFont">
+                <p>
+                  <i class="colorpink fas fa-play"></i><span class="leftmarginsm greyColor">Hashtag Tom: Reaching ePL semi-finals with Spurs means more</span>
+                </p>
+              </a>
+
+              <a href="#" class="articlesFont">
+                <p>
+                  <i class="colorpink fas fa-play"></i><span class="leftmarginsm greyColor">De Bruyne penalty puts Man City's Shellzz in PS4 final four</span>
+                </p>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top zoom1" src="assets/epl.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><span class="noracism"><em>ePremier League</em></span></br>
+              <span class="title">Results from the PS4 group stage and quarter-finals</span>
+              <a href="#" class="articlesFont">
+                <p>
+                  <i class="colorpink fas fa-play"></i><span class="leftmarginsm greyColor">Spurs progress in epic sudden-death penalty shootout</span>
+                </p>
+              </a>
+
+              <a href="#" class="articlesFont">
+                <p>
+                  <i class="colorpink fas fa-play"></i><span class="leftmarginsm greyColor">Rashford stunner helps Sheff Utd into Friday's ePL semi-finals</span>
+                </p>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mainWidget">
+    <footer class="footer">
+      <div class="container bottom_border">
+        <div class="row">
+          <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+            <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+            <p><i class="fa fa-phone"></i> +91-9999878398 </p>
+            <p><i class="fa fa fa-envelope"></i> info@example.com </p>
+
+
+          </div>
+
+
+          <div class=" col-sm-4 col-md  col-6 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+            <ul class="footer_ul_amrc">
+              <li><a href="#">Image Rectoucing</a></li>
+              <li><a href="#">Clipping Path</a></li>
+              <li><a href="#">Hollow Man Montage</a></li>
+              <li><a href="#">Ebay & Amazon</a></li>
+              <li><a href="#">Hair Masking/Clipping</a></li>
+              <li><a href="#">Image Cropping</a></li>
+            </ul>
+          </div>
+
+
+          <div class=" col-sm-4 col-md  col-6 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+            <ul class="footer_ul_amrc">
+              <li><a href="#">Remove Background</a></li>
+              <li><a href="#">Shadows & Mirror Reflection</a></li>
+              <li><a href="#">Logo Design</a></li>
+              <li><a href="#">Vectorization</a></li>
+              <li><a href="#">Hair Masking/Clipping</a></li>
+              <li><a href="#">Image Cropping</a></li>
+            </ul>
+          </div>
+
+
+          <div class=" col-sm-4 col-md  col-12 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+
+            <ul class="footer_ul2_amrc">
+              <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p>
+              </li>
+              <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p>
+              </li>
+              <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <ul class="foote_bottom_ul_amrc">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p class="text-center">Copyright @2021 | Designed With by <a href="#" class="gold">Kuatuly Zhan</a></p>
+
+        <ul class="social_footer_ul">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="pltable">
+        <h4 class="colorpurp leftmargin"> Premier League Table </h4>
+        <table class="table-content">
+          <thead>
+            <tr>
+              <th>Pos</th>
+              <th>Club</th>
+              <th>PI</th>
+              <th>GD</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="assets/mancity.png" width="19" height="20" class="rightmargin" alt="">Man City</td>
+              <td>30</td>
+              <td>+43</td>
+              <td>71</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="assets/ManchesterUnited.png" width="21" height="22" class="rightmargin" alt="">Man Utd</td>
+              <td>29</td>
+              <td>+24</td>
+              <td>57</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><img src="assets/leicester.png" width="19" height="20" class="rightmargin" alt="">Leicester</td>
+              <td>29</td>
+              <td>+21</td>
+              <td>56</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><img src="assets/chelsea.png" width="19" height="20" class="rightmargin" alt="">Chelsea</td>
+              <td>29</td>
+              <td>+19</td>
+              <td>51</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><img src="assets/westham.png" width="17" height="20" class="rightmargin" alt="">West Ham</td>
+              <td>29</td>
+              <td>+10</td>
+              <td>49</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><img src="assets/spurs.png" width="19" height="20" class="rightmargin" alt="">Spurs</td>
+              <td>29</td>
+              <td>+19</td>
+              <td>48</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td><img src="assets/liverpool.png" width="17" height="20" class="rightmargin" alt="">Liverpool</td>
+              <td>29</td>
+              <td>+12</td>
+              <td>46</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td><img src="assets/everton.png" width="19" height="20" class="rightmargin" alt="">Everton</td>
+              <td>28</td>
+              <td>+3</td>
+              <td>46</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td><img src="assets/arsenal.png" width="17" height="20" class="rightmargin" alt="">Arsenal</td>
+              <td>29</td>
+              <td>+8</td>
+              <td>42</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td><img src="assets/fulham.png" width="18" height="20" class="rightmargin" alt="">Fulham</td>
+              <td>28</td>
+              <td>+9</td>
+              <td>41</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td><img src="assets/leeds.png" width="19" height="20" class="rightmargin" alt="">Leeds</td>
+              <td>29</td>
+              <td>-2</td>
+              <td>39</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td><img src="assets/crystal.png" width="19" height="20" class="rightmargin" alt="">Crystal Palace</td>
+              <td>29</td>
+              <td>-16</td>
+              <td>37</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td><img src="assets/wolverhampton.png" width="21" height="20" class="rightmargin" alt="">Wolves</td>
+              <td>29</td>
+              <td>-10</td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td><img src="assets/southampton.png" width="19" height="20" class="rightmargin" alt="">Southampton</td>
+              <td>29</td>
+              <td>-15</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td><img src="assets/burnley.png" width="19" height="20" class="rightmargin" alt="">Burnley</td>
+              <td>29</td>
+              <td>-4</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td><img src="assets/brighton.png" width="19" height="20" class="rightmargin" alt="">Brighton</td>
+              <td>29</td>
+              <td>-20</td>
+              <td>28</td>
+            </tr>
+      </div>
+
+    </footer>
+
+  </section>
+  <button id="myBtn"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
